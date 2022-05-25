@@ -60,6 +60,8 @@ html {
     transform: scale(1.5);
 }
 .section-1-banner {
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .section-1-banner h1 {
@@ -88,6 +90,7 @@ html {
     border: none;
     border-radius: 0.5;
     cursor: pointer;
+    transition: clip-path .5s;
     clip-path: polygon(
     50% 0%,
     81% 5%,
@@ -99,6 +102,21 @@ html {
     0 100%,
     0 0,
     23% 5%
+    
   );
+}
+.section-1-banner button:hover {
+    clip-path: polygon(
+        40% 15%,
+        77% 15%,
+        100% 10%,
+        100% 90%,
+        75% 85%,
+        40% 85%,
+        30% 100%,
+        0 50%,
+        0 50%,
+        30% 0
+      );
 }
 /* End Section 1 */
