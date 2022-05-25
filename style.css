@@ -56,6 +56,47 @@ html {
     color: var(--black-color);
     transition: transform 0.5s;
 }
+/* Cube */
+
+.cube-wrapper {
+    perspective: 100rem;
+}
+.cube {
+    width:30rem;
+    height: 55rem;
+    background-color: red;
+    transform-style: preserve-3d;
+    transform: rotateY(140deg);
+}
+.front-side, 
+.back-side{
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+    background-color: #fee;
+    transform: translateZ(5rem);
+    position: absolute;
+}
+.back-side i {
+    font-size: 12rem;
+    color: var(--primary-color);
+    text-shadow: .1rem , 1rem ,2rem #aaa, -.1rem, -.1rem ;
+    transform: rotate(180deg);
+}
+.front-side{
+    padding: 2.5rem;
+    transform: translateZ(5rem);
+}
+.front-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.back-side {
+transform: translateZ(-5rem);
+}
+/* End of Cube */
 .navbar-link:hover {
     transform: scale(1.5);
 }
