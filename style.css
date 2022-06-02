@@ -65,7 +65,7 @@ html {
     width:30rem;
     height: 55rem;
     transform-style: preserve-3d;
-     transform: rotateY(91deg);
+     transform: rotateY(175deg);
     position: relative;
     top: -2rem;
 }
@@ -78,14 +78,11 @@ html {
     transform: translateZ(5rem);
     position: absolute;
     transform-style: preserve-3d;
-    box-shadow: inset .1rem .1rem .1rem #ddd,
-    inset -1rem -1rem -1rem #ddd;
 }
 .back-side i {
     font-size: 12rem;
     color: var(--primary-color);
     text-shadow: .1rem , 1rem ,2rem #aaa, -.1rem, -.1rem ;
-    transform: rotate(180deg);
 }
 .front-side{
     padding: 2.5rem;
@@ -206,6 +203,7 @@ transform: translateZ(-5rem);
     opacity: .5;
     transition: opacity .5s;
 }
+/* End Of Controls */
 .section-1-banner {
     display: flex;
     align-items: center;
