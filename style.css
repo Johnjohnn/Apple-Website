@@ -56,6 +56,9 @@ html {
     color: var(--black-color);
     transition: transform 0.5s;
 }
+.navbar-link:hover {
+    transform: scale(1.5);
+}
 /* Cube */
 
 .cube-wrapper {
@@ -65,7 +68,7 @@ html {
     width:30rem;
     height: 55rem;
     transform-style: preserve-3d;
-     transform: rotateY(175deg);
+     /* transform: rotateY(175deg); */
     position: relative;
     top: -2rem;
 }
@@ -145,9 +148,7 @@ transform: translateZ(-5rem);
     transform-origin: right;
 }
 /* End of Cube */
-.navbar-link:hover {
-    transform: scale(1.5);
-}
+
 /* Controls */
 .controls {
     position: absolute;
