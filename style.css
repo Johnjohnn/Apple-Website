@@ -68,9 +68,11 @@ html {
     width:30rem;
     height: 55rem;
     transform-style: preserve-3d;
+    transform:rotateX(0)rotateY(20deg);
      /* transform: rotateY(175deg); */
     position: relative;
     top: -2rem;
+    transition: transform 0.5s;
 }
 .front-side, 
 .back-side{
