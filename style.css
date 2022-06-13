@@ -391,7 +391,7 @@ transform: scale(0);
 .section-3 {
 width: 100%;
 height: 100%;
-background-color: var(--black-color);  
+background-color: var(--black-color);  ;
 flex-direction: column;
 padding: 15rem 0;
 }
@@ -419,7 +419,53 @@ padding: 15rem 0;
  /* section 3 Loading */
  .loading-wrapper {
      position: absolute;
+     top: 6%;
      width: 60%;
      height: 85%;
-     background-color: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(images/MacBook/macbook-1-desktop.png) center no-repeat;
+     background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(images/MacBook/macbook-1-desktop.png) center no-repeat;
+     z-index: -1;
  }
+ .loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: var(--black-color);
+}
+/* Section 3 info */
+.macbook-info {
+    position: absolute;
+    width: 70rem;
+    text-align: center;
+    opacity: 0;
+
+}
+.macbook-info-heading {
+    font-size: 6rem;
+    font-weight: 400;
+    color:var(--primary-color)
+}
+.macbook-price {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 3rem 0;
+
+}
+.macbook-btn {
+    width: 25rem;
+    height: 5rem;
+    background-image: linear-gradient(#ddd, #fff);
+    border: none;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem .1rem #fff, -.1rem, -.1rem, -.1rem #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.loading i {
+font-size: 10rem;
+color: var(--white-color);
+}
