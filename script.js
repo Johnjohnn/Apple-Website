@@ -88,3 +88,14 @@ const slideshow = ()=> {
 }
 slideshow()
 // End of Slideshow
+
+// section 3 
+const section3Content = document.querySelector(".section-3-content");
+
+window.addEventListener("scroll", () => {
+    if(window.pageYoffset + window.innerHeight >= section3Content.offsetTop + section3Content.offsetHeight/2) {
+    section3Content.classList.add("change")
+    }
+ 
+})
+// End of section 3
